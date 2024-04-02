@@ -41,7 +41,7 @@ class _CountdownState extends State<Countdown> {
     countdownController.addListener(() {
       if(mounted)
         {
-          setState(() {})
+          setState(() {});
         }
     });
   }
