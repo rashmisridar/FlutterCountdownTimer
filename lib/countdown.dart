@@ -38,7 +38,12 @@ class _CountdownState extends State<Countdown> {
   void initState() {
     super.initState();
 
-    countdownController.addListener(() => setState(() {}));
+    countdownController.addListener(() {
+      if(mounted)
+        {
+          setState(() {})
+        }
+    });
   }
 
   @override
