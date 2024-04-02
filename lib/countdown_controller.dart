@@ -52,7 +52,7 @@ class CountdownController extends ValueNotifier<int> {
   ///start
   start() {
     if (value <= 0) return;
-    _dispose();
+   // _dispose();
     Duration duration = _getDuration();
     if (duration == stepDuration) {
       _diffTimer = Timer.periodic(stepDuration, (Timer timer) {
@@ -95,7 +95,7 @@ class CountdownController extends ValueNotifier<int> {
 
   @override
   void dispose() {
-    _dispose();
+  //  _dispose();
     super.dispose();
   }
 
